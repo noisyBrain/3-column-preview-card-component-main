@@ -1,0 +1,41 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight:400;
+    font-size:15px;
+    background-color:hsl(0, 0%, 95%);
+}
+
+body {
+    display:flex;
+    position:relative;
+    justify-content:center;
+    align-items:center;
+}
+
+.mainContainer {
+    display:flex;
+    position:absolute;
+    top:10rem;
+    justify-content:center;
+    align-items:center;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+
+.sedanContainer {
+    position:relative;
+    
+    background:hsl(31, 77%, 52%);
+}
+
+.suvsContainer {
+    position:relative;
+    background: hsl(184, 100%, 22%);
+}
+
+.luxuryContainer {
+    position:relative;
+    background:hsl(179, 100%, 13%);
+}
