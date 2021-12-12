@@ -1,11 +1,8 @@
 * {
     margin:0;
     padding:0;
-    box-sizing:border-box;
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight:400;
+    box-sizing:border-box;    
     font-size:15px;
-    background-color:hsl(0, 0%, 95%);
 }
 
 body {
@@ -13,21 +10,44 @@ body {
     position:relative;
     justify-content:center;
     align-items:center;
+    height:100vh;
+    width:100vw;
+    background-color:hsl(0, 0%, 95%);
 }
 
 .mainContainer {
     display:flex;
-    position:absolute;
-    top:10rem;
+    position:relative;
     justify-content:center;
     align-items:center;
-    color:hsla(0, 0%, 100%, 0.75);
+    color:#fff;
+}
+
+.mainContainer div {
+    width:290px;
+    height:460px;
+    padding:50px 40px;
+}
+
+.mainContainer p {
+    background-color: inherit;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size:15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
 }
 
 .sedanContainer {
-    position:relative;
-    
+    position:relative;    
     background:hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+div img {
+    display:flex;
+    position:relative;
+    background-color: inherit;
 }
 
 .suvsContainer {
@@ -38,4 +58,69 @@ body {
 .luxuryContainer {
     position:relative;
     background:hsl(179, 100%, 13%);
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.button {
+    display:flex;
+    position:relative;
+    top:30px;
+    font-family: 'Lexend Deca', sans-serif;
+    border:none;
+    border-radius: 50px;
+    background-color: hsl(0, 0%, 95%);
+    padding:13px 30px;   
+    cursor:pointer;
+
+}
+
+.button:hover {
+    background-color:inherit;
+    color:hsla(0, 0%, 100%, 0.75) !important;
+    border:2px solid hsla(0, 0%, 100%, 0.75);;
+}
+
+#sedan-button {
+    color:hsl(31, 77%, 52%);
+}
+
+#suvs-button {
+    color:hsl(184, 100%, 22%);
+}
+
+#luxury-button {
+    color:hsl(179, 100%, 13%);
+}
+
+footer {
+    display:flex;
+    position:absolute;
+    bottom:0;
+    left:0;
+    padding:2.5rem;
+}
+
+span {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size:36px;    
+    color:hsla(0, 0%, 100%, 0.9);    
+    background-color:inherit;
+}
+
+@media(max-width:375px) {
+    body {
+        width:auto;
+        height:auto;
+    }
+    
+    .mainContainer {
+        flex-direction:column;
+        }
+    
+    
+    footer {
+        display:none;
+
+    }
 }
