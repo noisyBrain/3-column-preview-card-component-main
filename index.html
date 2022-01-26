@@ -15,41 +15,39 @@
   <title>Frontend Mentor | 3-column preview card component</title>
 
 </head>
+
   <body>
 
-    <div class="mainContainer">
+    <main class="mainContainer">
 
-      <div class="sedanContainer">    
-        <img 
-        src="../images/icon-sedans.svg" alt="sedan-svg"><br><br>
-        <span>SEDANS</span><br><br>
-        <p>Choose a sedan for itsaffordability and excellent fueleconomy. Ideal for  cruising in thecity 
-        or on your next road trip.</p>
-        <br><br>
-        <button id="sedan-button"class="button" type="button">LearnMore</button>     
-      </div>
+      <section class="mainContainer__sedan">
 
-      <div class="suvsContainer">
+        <img class="mainContainer__img" src="../images/icon-sedans.svg" alt="sedan-img">
+        <header class="mainContainer__title">SEDANS</header>        
+        <p class="mainContainer__desc">Choose a sedan for itsaffordability and excellent fueleconomy. Ideal for cruising in thecity or on your next road trip.</p>
+        <a href="#" class="mainContainer__link">LearnMore</a>
 
-        <img  src="../images/icon-suvs.svg" alt="suvs-svg"><br><br>
-        <span>SUVS</span><br><br>
-        <p>Take an SUV for its spacious interior, power, and versatility. Perfect for  your next family vacation and off-road adventures.</p>
-        <br><br>
-        <button id="suvs-button" class="button" type="button">Learn More</button>      
+      </section>
+
+      <section class="mainContainer">
+
+        <img class="mainContainer__img" src="../images/icon-suvs.svg" alt="suvs-img">
+        <header class="mainContainer__title" >SUVS</header>
+        <p class="mainContainer__desc">Take an SUV for its spacious interior, power, and versatility. Perfect for  your next family vacation and off-road adventures.</p>
+        <a class="mainContainer__link" href="#">Learn More</a>
       
-      </div>
+      </section>
 
-      <div class="luxuryContainer">
-        <img src="../images/icon-luxury.svg" alt="luxury-svg"><br><br>
-        <span>LUXURY</span><br><br>
-        <p>Cruise in the best car brands without the bloated   prices. Enjoy the enhanced  comfort of a luxury 
-        rental and arrive in style.</p>
-        <br><br>
-        <button id="luxury-button" class="button" type="button">Learn More</button>
+      <section class="mainContainer">
+
+        <img class="mainContainer__img" src="../images/icon-luxury.svg" alt="luxury-img">
+        <header>LUXURY</header>
+        <p class="mainContainer__desc">Cruise in the best car brands without the bloated   prices. Enjoy the enhanced  comfort of a luxury rental and arrive in style.</p>
+        <a class="mainContainer__link">Learn More</a>
       
-      </div>
+      </section>
 
-    </div>
+    </main>
 
     <footer>
 
@@ -59,5 +57,7 @@
       </div>
 
     </footer>
+
   </body>
+  
 </html>
