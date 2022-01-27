@@ -7,24 +7,14 @@
 
 body {
     display:flex;
-    /* justify-content: center; */
     min-height:100vh;
     padding:1rem;
     background-color:hsl(0, 0%, 95%);
 }
 
-/* .contenedor {
-    display:flex;
-    flex-direction: column;
-    max-width:20rem;
-    min-height:26.25rem;
-    overflow:hidden;
-} */
-
 .mainContainer {
     display:flex;
     max-width:58rem;
-    /* padding: 4.75rem 1.5rem; */
     border-radius:0.75rem;
     overflow:hidden;
     color:#fff;
