@@ -22,19 +22,20 @@ body {
 
 .mainContainer__title {
     font-size: 2.5rem;
-    font-family: Big Shoulders Display;
+    font-family: Big Shoulders Display, sans-serif;
+    text-transform: uppercase;
 }
 
-.mainContainer section {
+.mainContainer div {
     padding:50px 40px;
 }
 
 .mainContainer__desc {
-    background-color: inherit;
     font-family: 'Lexend Deca', sans-serif;
-    font-size:15px;
     color: hsla(0, 0%, 100%, 0.75);
-    line-height: 25px;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .mainContainer__sedan { 
@@ -50,7 +51,7 @@ body {
 }
 
 .mainContainer__link {
-    display:flex;
+    display:inline-block;
     font-family: 'Lexend Deca', sans-serif;
     border:none;
     border-radius: 2.5em;
@@ -60,7 +61,14 @@ body {
     margin-top:auto;
     text-decoration: none;
     cursor:pointer;
+}
 
+.mainContainer__link:focus {
+    border: 0.3rem solid wheat;
+}
+
+.mainContainer__link:focus-visible {
+    outline: 0.3rem solid rgb(108, 252, 245);
 }
 
 .mainContainer__link:hover {
@@ -97,13 +105,9 @@ footer {
 } */
 
 @media(max-width:540px) {
-    body {
-        width:auto;
-        height:auto;
-    }
-    
+
     .mainContainer {
-        flex-flow:column wrap;
+        flex-direction:column;
         }
     
     
